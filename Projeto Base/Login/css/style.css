@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color:#fafafa ;
+}
+
+.caixa {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 149px;
+
+}
+
+.cadastro {
+    width: 342px;
+    height: 380px;
+    font-family: Arial, Helvetica, sans-serif;
+ /* AQUI FIZ ALTERÇÃO. DA COR BRANCA PARA O PRETO QUE FEZ O CONTORNO DA */
+  
+    border: 1px solid #f1f1f1 ;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}   
+
+.imgcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    font-size: 14px;
+}
+
+
+.imgcontainer p{
+    width: 209px;
+    height: 38px;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    color: #909090;
+    font-weight: 600; 
+}
+
+.input-content{
+    width: 267px;
+}
+
+.input-content input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.input-content input:focus {
+    outline-color:  rgb(134, 134, 134);
+}
+
+.input-content p{
+    text-align: center;
+    font-size: 12px;
+    color: #909090;
+    font-weight: 400;
+    margin-top:10px;
+}
+.linha-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha-container p{
+    position: relative;
+    margin: -3px 20px 0px 20px;
+}
+.linha{
+    border: 1px solid ;
+    width: 100px;
+    height: 0px;
+    color: #CBCBCB;
+    
+    
+}
+
+input[type=text], input[type=password] {
+  width: 267px;
+  height: 35px;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+
+}
+
+.botao {
+    width: 267px;
+    height: 30px;
+  background-color:#2686CC;
+  color: white;
+  padding: 6px 100px;
+  margin-top: 18px;
+  margin-bottom: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius:2px ;
+}
+.esquecer{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.esquecer a{
+    text-decoration: none;
+    color: #2686CC;
+    font-size: 12px;
+}
+.esquecer a:hover{
+    text-decoration: underline;
+}
+
+.conect{
+    width: 342px;
+    height: 75px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color:#ffffff ;
+    border: 1px solid #f1f1f1; 
+    font-size: 12px;
+    
+}
+.conect a:first-child{
+     color: black;
+     
+}
+.app{
+    
+    width: 342px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    font-size: 12px;
+    margin-top: 15px;
+    
+}
+
+.play{
+    width: 277px;
+    height: 43px;
+    display: flex;
+    margin-top: 30px;
+    border: 1px #f4f4f4;    
+}
+.play img{
+    margin-right: 7px;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color:#2686CC;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+          display:block;
+            float: none;
+     
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.conect a{
+    font-size: 12px;
+    color: #2686CC;
+    text-decoration: none;
+}
+.conect a:hover{
+    text-decoration: underline;
+}

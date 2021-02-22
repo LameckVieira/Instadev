@@ -1,0 +1,368 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+}
+
+.main {
+    width: 100%;
+}
+
+.container-feed {
+    width: 935px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.small-space {
+    display: flex;
+    max-width: 100%;
+    height: 24px;
+}
+
+.content {
+    width: 610px;
+    height: 113px;
+    background-color: #FFFFFF;
+    border: solid 1px #F1F1F1;
+}
+
+.content ul {
+    width: 610px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+
+.content li {
+    text-align: center;
+}
+
+.flex-center-bt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friend-list {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.friend-list ul {
+    list-style-type: none;
+}
+
+.friends li {
+    background-color: #FFFFFF;
+}
+
+.friends li img {
+    background-color: #FFFFFF;
+}
+
+.friends p {
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.alinhado {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.alinhado p {
+    margin-left: 21px;
+    width: 200px;
+}
+
+.username_feed p:first-child {
+    color: black;
+}
+
+.username_feed {
+    font-weight: 600;
+    font-size: 16px;
+    color: #b6b6b6;
+}
+
+.friend-list ul li h1 {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 610px;
+    height: 166px;
+    background-color: #FFFFFF;
+    border: solid 1px #F1F1F1;
+    margin-bottom: 38px;
+}
+
+.postar-content {
+    margin: 0 25px;
+    background: #FFFFFF;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-text {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding-top: 21px;
+}
+
+.post ul {
+    list-style-type: none;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.sombrinha {
+    background: #FFFFFF;
+}
+
+.post ul h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    background: #FFFFFF;
+}
+
+.post ul img {
+    background: #FFFFFF;
+}
+
+.busca {
+    margin-top: 30px;
+}
+
+.digite input {
+    width: 231px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.escolher {
+    width: 157px;
+    height: 27px;
+}
+
+.escolher label {
+    width: 157px;
+    height: 27px;
+    /* margin-left: 10px; */
+    border-radius: 5px;
+    font-size: 12px;
+    color: #7D7D7D;
+    font-weight: 600;
+    background-color: #D1D1D1;
+    position: absolute;
+    /* top:266.5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.do-lado {
+    margin-left: 175px;
+}
+
+.do-lado h2 {
+    font-size: 12px;
+}
+
+.escolher input[type='file'] {
+    display: none;
+}
+
+.Adicionar-conteudo button {
+    width: 140px;
+    height: 27px;
+    background-color: #2686CC;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.post_gabigordo {
+    width: 610px;
+    height: 610px;
+    background-color: #FFFFFF;
+    border: solid 1px #F1F1F1;
+    margin-bottom: 55px;
+}
+
+.imagem {
+    margin-top: 13px;
+    margin-left: 16px;
+    font-size: 12px;
+}
+
+.imagem img {
+    background-color: #FFFFFF;
+}
+
+.imagem ul {
+    background-color: #FFFFFF;
+}
+
+.texto {
+    background-color: #FFFFFF;
+}
+
+.post_gabigordo p:first-child {
+    font-weight: 600;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.post_gabigordo p {
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.foto {
+    margin-top: 16px;
+    max-width: 610px;
+    margin-bottom: 14.08px;
+    background-color: #FFFFFF;
+}
+
+.coracao {
+    background-color: #FFFFFF;
+}
+
+.coracao img {
+    background-color: #FFFFFF;
+}
+
+.coracao label {
+    margin-left: 21.33px;
+    background-color: #FFFFFF;
+}
+
+.coracao input[type='checkbox'] {
+    display: none;
+}
+
+.balao {
+    margin-left: 19.33px;
+    background-color: #FFFFFF;
+}
+
+.comentar {
+    background-color: #FFFFFF;
+}
+
+.comentar input {
+    width: 220px;
+    border: none;
+    border-bottom-style: solid;
+    margin-left: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px solid #DCDCDC;
+    background-color: #FFFFFF;
+}
+
+.text {
+    width: 140px;
+    background-color: #FFFFFF;
+}
+
+.curtidas {
+    width: 100px;
+    margin-left: 22px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.coments {
+    background-color: #FFFFFF;
+}
+
+.coments ul {
+    background-color: #FFFFFF;
+}
+
+.coments li {
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+.coments li h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.cerquilha {
+    font-size: 13px;
+    font-weight: 400;
+    color: #2686CC;
+    background-color: #FFFFFF;
+}
+
+.coments h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+    margin-left: 28px;
+    background-color: #FFFFFF;
+}
+
+.coments h6 {
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+    margin-left: 25px;
+    background-color: #FFFFFF;
+}
+
+.coments h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 22px;
+    color: black;
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+.space {
+    width: 100%;
+    height: 55px;
+    display: flex;
+}

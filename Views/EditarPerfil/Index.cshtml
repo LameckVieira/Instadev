@@ -1,0 +1,55 @@
+@{
+ViewData["Title"] = "EditarPerfil";
+}
+
+<section class="principal">
+    <div class="edicao">
+        <div class="titulo">
+            <h1 class="editar">Editar Perfil</h1>
+        </div>
+        <form method="POST" action='@Url.Action("AlterarDados")' enctype="multipart/form-data">
+            <div class="informacao">
+                <div class="info-usuario">
+                    <img src="~/img/perfil/@ViewBag.UserLogado.Foto" alt="Foto do Perfil">
+                    <div class="info">
+                        <h2>@ViewBag.UserLogado.Username</h2>
+                        <div class="alterar-editar">
+                            <label for="arquivo">Alterar foto do perfil</label>
+                            <input type="file" name="Foto" id="arquivo" ></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="nome">
+                    <form action="#">
+                        <label for="text-editar-perfil">Nome</label>
+                        <div class="text-input">
+                            <input value="@ViewBag.UserLogado.Nome" name="Nome" type="text"></input>
+                            <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.</p>
+                            <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="usuario">
+                    <label for="text">Nome de usuário</label>
+                    <div class="text-input">
+                        <input value="@ViewBag.UserLogado.Username" name="Username" type="text"></input>
+                        <p id="txt-username">Na maioria dos casos, você poderá alterar seu nome de usuário novamente para nascimento_tr por mais 14 dias.</p>
+                        <p>Informações pessoais<br/> Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="text">Email</label>
+                    <input value="@ViewBag.UserLogado.Email" name="Email" type="text"></input>
+                </div>
+                <div class="datadenascimento">
+                    <label for="text">Data de nascimento</label>
+                    <input value="@ViewBag.UserLogado.DataNascimento" name="DataNascimento" type="text" ></input>   
+                </div>
+                <div class="enviar">
+                    <button class="botao" type="submit">Enviar</button>
+                    <a class="desativar" yasp-area="" asp-controller="EditarPerfil" asp-action="Excluir" asp-route-id="@ViewBag.UserLogado.IdUsuario" title="Página de cadastro">Desativar minha conta definitivamente</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

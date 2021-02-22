@@ -1,0 +1,140 @@
+@{
+    ViewData["Title"] = "Instadev";
+}
+
+<div class="container-feed">
+    <div class="small-space"></div>
+    <section class="friend-list flex-center-bt">
+        <div class="content flex-center-bt">
+            <ul>
+                @foreach (Usuario u in ViewBag.Usuarios)
+                {
+                    if(@u.IdUsuario != @ViewBag.UserLogado.IdUsuario)
+                    {
+                        <form class="friends" method="POST" action='Amigo' enctype="multipart/form-data">
+                            <li> 
+                                <img src="~/img/perfil/@u.Foto" alt="Foto do perfil do amigo Vin Diesel">
+                                <p class="nome-stories">@u.Username</p>
+                                <input type="hidden" value="@u.IdUsuario" name="IdAmigo"></input>
+                                <input type="hidden" value="@u.Nome" name="NomeAmigo"></input>
+                                <input type="hidden" value="@u.Foto" name="FotoAmigo"></input>
+                                <input type="hidden" value="@u.Username" name="UsernameAmigo"></input>
+                                <button type="submit"></button>
+                            </li>
+                        </form>
+                    }
+                }
+            </ul>
+        </div>
+        <div class="alinhado">
+            <div class="flex-center-bt">
+                @* Imagem do usuário logado *@
+                <a asp-area="" asp-controller="Perfil" asp-action="Index" title=""><img src="~/img/perfil/@ViewBag.UserLogado.Foto" alt="Sua foto de perfil"></a>
+                <div class="username_feed">
+                    <a asp-area="" asp-controller="Perfil" asp-action="Index" title=""><p>@ViewBag.UserLogado.Username</p></a>
+                    <a asp-area="" asp-controller="Perfil" asp-action="Index" title=""><p>@ViewBag.UserLogado.Nome</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="post">
+        <div class="container">
+            <div class="postar-content">
+
+                <ul class="flex-center">
+                    <div class="img-text">
+                        @* Imagem do usuário logado *@
+                        <li class="sombrinha"><img src="~/img/perfil/@ViewBag.UserLogado.Foto" alt="Imagem de perfil"></li>
+                        <li>
+                            <h3>Postar</h3>
+                        </li>
+                    </div>
+                </ul>
+                <div class="Adicionar-conteudo">
+                    <form method="POST" action='@Url.Action("CreatePost")' enctype="multipart/form-data">
+                        <div class="busca">
+                            <ul class="flex-center-bt">
+                                <div class="digite">
+                                    <li><input type="text" name="Legenda" placeholder="Digite a descrição da imagem..." required/></li>
+                                </div>
+                                <div class="escolher">
+                                    <label for='selecao-arquivo'>Escolha a imagem</label>
+                                    <input type="file" id="selecao-arquivo" name="Imagem" required/>
+                                </div>
+                                <div class="postar">
+                                    <li><button type="submit">Postar</button></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <i class="erro">@TempData.Peek("Mensagem2")</i>
+            </div>
+        </div>
+    </section>
+    <section class="Postagem1">
+        @foreach (Publicacao p in ViewBag.Posts)
+        {
+            <div class="post-feed">
+                <div class="imagem">
+                    <ul class="flex-center">
+                        @* Imagem do usuario que fez o post *@
+                        <img src="~/img/perfil/@p.FotoUsuario" alt="Foto do perfil do amigo Gabi Gordo">
+                        <div class="texto">
+                            <p class="nome-publicacao">@p.Username</p>
+                            <p>São Paulo, SP</p>
+                        </div>
+                    </ul>
+                </div>
+                <div class="foto">
+                    @* Imagem do post *@
+                    <img src="~/img/publicacoes/@p.Imagem" alt="Foto dos jogadores do Flamengo com o amigo gabigordo">
+                </div>
+                <div id="legenda" class="coments">
+                    <div class="flex-center">
+                        <h4>@p.Username</h4>
+                        <p>@p.Legenda</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="coments">
+                        <div class="flex-center">
+                            <a asp-area="" asp-controller="Feed" asp-action="Curtir" asp-route-id="@p.IdPublicacao">
+                                <img class="coracao" id="p.IdPublicacao" src="./img/img-perfil/like.svg" alt="" onclick="curtir(@p.IdPublicacao)">
+                            </a>
+                            <div class="balao" id="@p.Imagem">
+                                <img src="./img/img-feed/Vectorbalao.svg" alt="">
+                            </div>
+                            <form class="comentar" method="POST" action='@Url.Action("Comentar")' enctype="multipart/form-data" >
+                                <input name="IdPublicacao" value="@p.IdPublicacao" type="hidden">
+                                <input type="text"  placeholder="Comentar..." name="Mensagem" required />
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h5 class="curtidas">@p.Likes curtidas</h5>
+                </div>
+                <ul class="box-comments">
+                    @foreach (Comentario c in ViewBag.Comentarios)
+                    {
+                        @if(p.IdPublicacao == c.IdPublicacao)
+                        {
+                            <li>
+                                <div class="comment">
+                                    <div class="comment-feed">
+                                        <h3>@c.Username</h3>
+                                        <p>@c.Mensagem</p>
+                                    </div>
+                                    <img class="heart" id="@c.IdComentario" src="./img/img-perfil/like.svg" alt="" onclick="curtir(@c.IdComentario)">
+                                    <a class="trash" asp-area="" asp-controller="Feed" asp-action="ExcluirComentario" asp-route-id="@c.IdComentario"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        }
+    </section>        
+</div>

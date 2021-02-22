@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="https://kit.fontawesome.com/86484b0d96.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="~/img/Instadev.ico" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    @if((ViewData["Title"].ToString() != "Login") && (ViewData["Title"].ToString() != "Cadastro"))
+    {
+        <header class="top">
+            <div class="top-container">
+                <a asp-area="" asp-controller="Feed" asp-action="Index" title="Home">
+                    <img src="img/img-header/Instadev.svg" alt="logo Instadev">
+                </a>
+                <div class="search-container">
+                    <div id="search">
+                        <img src="img/img-header/Vector.svg" alt="Procurar" />
+                        <input id="buscar" type="text" placeholder="Procurar" />
+                    </div>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a asp-area="" asp-controller="Feed" asp-action="Index" title="Feed">
+                                <img src="img/img-header/home 1.svg" alt="Início">
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/img-header/plane 1.svg" alt="Direct">
+                        </li>
+                        <li>
+                            <img src="img/img-header/compass 1.svg" alt="Pesquisar">
+                        </li>
+                        <li>
+                            <img src="img/img-header/heart 1.svg" alt="Notificações">
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Perfil" asp-action="Index" title="Perfil">
+                                <img src="~/img/perfil/@ViewBag.UserLogado.Foto" alt="Perfil">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    }
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    @if((ViewData["Title"].ToString() != "Login") && (ViewData["Title"].ToString() != "Cadastro"))
+    {
+        <footer class="rodape">
+            <div class="rodape-container">
+                <div class="campo">
+                    <nav>
+                        <ul>                
+                            <li>Desenvolvido com &hearts; por:</li>
+                            <li><a href="https://github.com/vinixiii" target="_blank">&commat;Vinícius Figueiroa</a></li>
+                            <li><a href="https://github.com/TailaFranco" target="_blank">&commat;Taila Franco</a></li>
+                            <li><a href="https://github.com/LameckVieira" target="_blank">&commat;Lameck Vieira</a></li>
+                            <li><a href="https://github.com/leandroairzone" target="_blank">&commat;Leandro Rangel</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="direitos">
+                    <ul>
+                        <li>Português (Brasil)</li>
+                        <li>&copy; 2021 Instadev Grupo 6 - Todos os direitos reservados</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    }    
+
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/pesquisa.js" asp-append-version="true"></script>
+    <script src="~/js/segue.js" asp-append-version="true"></script>
+    <script src="~/js/curte.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

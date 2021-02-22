@@ -1,0 +1,1567 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+
+/* --------------------global termino-------------------*/
+
+.principal {
+    width: 100%;
+    height: 61.0rem;
+    padding-top: 2.4rem;
+}
+
+.edicao {
+    width: 93.5rem;
+    height: 61.0rem;
+    margin: auto;
+    display: flex;
+    border: solid 0.1rem #F1F1F1;
+    background-color: white;
+}
+
+.titulo {
+    width: 23.3rem;
+    height: 61.0rem;
+    border-right: solid 0.1rem #F1F1F1;
+}
+
+.titulo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.editar {
+    width: 23.3rem;
+    height: 5.392rem;
+    padding-left: 2.9rem;
+    padding-top: 1.9rem;
+    font-size: 1.5rem;
+    border-left: solid 0.3rem;
+}
+
+.img {
+    display: flex;
+    width: 20.0rem;
+    height: 61rem;
+    padding-left: 12.9rem;
+    list-style-type: none;
+    justify-content: right;
+}
+
+.texto-editar-perfil {
+    width: 20rem;
+    height: 36.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.texto h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.informacao {
+    width: 58.0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.informacao input {
+    border: 0.1rem solid #ccc;
+    padding-left: 1rem;
+    color: black;
+}
+
+.informacao input:focus {
+    outline-color: rgb(134, 134, 134);
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 15.3rem;
+}
+
+.info-usuario img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2.0rem;
+}
+
+.info {
+    width: 52.3rem;
+    height: 9.8rem;
+    padding-top: 2.5rem;
+}
+
+.info h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.info a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2686CC;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.alterar-editar{
+    color: #2686CC;
+}
+
+.alterar-editar input{
+    display: none;
+}
+
+.alterar-editar :hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nome {
+    display: flex;
+}
+
+.nome label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.nome input {
+    width: 35.4rem;
+    height: 3rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+}
+
+.text-input {
+    width: 35.4rem;
+    word-break: normal;
+    margin-bottom: 2.0rem;
+}
+
+.text-input p {
+    margin: 1.0rem 0;
+    color: #909090;
+    border-style: solid 0.01rem;
+    font-size: 1.2rem;
+}
+
+.usuario {
+    display: flex;
+}
+
+.usuario label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.usuario input {
+    width: 35.4rem;
+    height: 3.0rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+}
+
+.usuario p {
+    width: 35.4rem;
+    color: #909090;
+    border-style: solid 0.1rem;
+    font-size: 1.2rem;
+}
+
+#txt-username {
+    margin-bottom: 2.5rem;
+}
+
+.email {
+    display: flex;
+}
+
+.email label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.email input {
+    width: 35.4rem;
+    height: 3.0rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+}
+
+.datadenascimento {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.datadenascimento label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.datadenascimento input {
+    width: 35.4rem;
+    height: 3.0rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+}
+
+.enviar {
+    width: 35.4rem;
+    height: 12.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2686CC;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.desativar {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2686CC;
+}
+
+.desativar:hover {
+    text-decoration: underline;
+}
+
+
+/* --------------Fim do editar perfil------------ */
+
+
+/* --------------Cadastro início-----------------*/
+
+.caixa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14.9rem;
+}
+
+.conect a:hover {
+    text-decoration: underline;
+}
+
+.cadastro {
+    width: 34.2rem;
+    height: 53.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.1rem solid #f1f1f1;
+    background-color: #ffffff;
+}
+
+.imgcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.imgcontainer img {
+    margin-top: 5rem;
+}
+
+.imgcontainer p {
+    width: 20.9rem;
+    height: 3.8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #909090;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-content {
+    width: 26.7rem;
+}
+
+.input-content input:focus {
+    outline-color: rgb(134, 134, 134);
+}
+
+.input-content p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #909090;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.input-content input {
+    width: 26.7rem;
+    height: 3.5rem;
+    padding: 1.2rem 2rem;
+    margin: 0.8rem 0;
+    display: inline-block;
+    border: 0.1px solid #ccc;
+    border-radius: 0.2rem;
+    color: black;
+}
+
+.input-content input::placeholder {
+    color: #909090;
+}
+
+.botao-cadastro {
+    width: 26.7rem;
+    height: 3rem;
+    background-color: #2686CC;
+    color: white;
+    text-align: center;
+    margin: 0.8rem 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.conect {
+    width: 34.2rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border: 0.1rem solid #f1f1f1;
+    font-size: 1.2rem;
+}
+
+.conect a {
+    color: #2686CC;
+    text-decoration: none;
+}
+
+.app {
+    width: 34.2rem;
+    height: 11.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 19.5rem;
+}
+
+.app p {
+    margin-top: 3rem;
+}
+
+.play {
+    width: 27.7rem;
+    height: 4.3rem;
+    display: flex;
+    margin-top: 2.9rem;
+    border: 0.1px #f4f4f4;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 1rem 1.8rem;
+    background-color: #2686CC;
+}
+
+
+/* --------------Cadastro Fim-----------------*/
+
+
+/* --------------Header início-------------------*/
+
+.top {
+    width: 100%;
+    height: 5.3rem;
+    border: 1px solid #F1F1F1;
+    background-color: white;
+}
+
+.top-container {
+    max-width: 93.5rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-container input {
+    width: 8rem;
+    background: #FAFAFA;
+    border-style: none;
+}
+
+.top-container input::placeholder {
+    color: #afafaf;
+    opacity: 1;
+    /* Correção Firefox*/
+}
+
+.top-container input:focus {
+    border: none;
+    border-style: none;
+    outline: none;
+    align-self: start;
+}
+
+.search-container {
+    width: 21.5rem;
+    height: 2.8rem;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem #dcdcdc;
+    border-radius: 0.2rem;
+    margin-left: 7.7rem;
+}
+
+#search {
+    display: flex;
+    padding-left: 2.9rem;
+    justify-content: center;
+}
+
+#search img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 1.3rem;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+.menu li img {
+    max-width: 3.2rem;
+    max-height: 3.2rem;
+    border-radius: 50%;
+}
+
+
+/* JavaScript Classes */
+
+.searching {
+    justify-content: initial;
+}
+
+.searching #search {
+    padding-left: 1rem;
+}
+
+.searching #search input {
+    width: 18.5rem;
+}
+
+
+/* --------------Fim Header início-------------------*/
+
+
+/* --------------Footer início-----------------------*/
+
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.rodape-container {
+    max-width: 935px;
+}
+
+.campo {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+.rodape ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 2.5em;
+}
+
+/* --------------Footer Fim-----------------------*/
+
+
+/* --------------login início-----------------------*/
+
+.caixa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 149px;
+}
+
+.login {
+    width: 342px;
+    height: 380px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #f1f1f1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.img-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.img-login p {
+    width: 209px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #909090;
+    font-weight: 600;
+}
+
+.input-content {
+    width: 267px;
+}
+
+.input-content input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.input-content input:focus {
+    outline-color: rgb(134, 134, 134);
+}
+
+.input-content p {
+    text-align: center;
+    font-size: 12px;
+    color: #909090;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.linha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha-container p {
+    position: relative;
+    margin: -3px 20px 0px 20px;
+}
+
+.linha {
+    border: 1px solid;
+    width: 100px;
+    height: 0px;
+    color: #CBCBCB;
+}
+
+.botao-login {
+    width: 267px;
+    height: 30px;
+    background-color: #2686CC;
+    color: white;
+    padding: 6px 100px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.esquecer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.esquecer a {
+    text-decoration: none;
+    color: #2686CC;
+    font-size: 12px;
+}
+
+.esquecer a:hover {
+    text-decoration: underline;
+}
+
+/* .conect-login {
+    width: 342px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #f1f1f1;
+    font-size: 12px;
+}
+
+.conect-login a:first-child {
+    color: black;
+} */
+
+.app {
+    width: 342px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.play {
+    width: 277px;
+    height: 43px;
+    display: flex;
+    margin-top: 30px;
+    border: 1px #f4f4f4;
+}
+
+.play img {
+    margin-right: 7px;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #2686CC;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.conect a {
+    font-size: 12px;
+    color: #2686CC;
+    text-decoration: none;
+}
+
+.conect a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------Login Fim---------------- */
+
+
+/* ------------------feed início----------------*/
+
+.main {
+    width: 100%;
+}
+
+.container-feed {
+    width: 935px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.small-space {
+    display: flex;
+    max-width: 100%;
+    height: 24px;
+}
+
+.content {
+    width: 610px;
+    height: 113px;
+    background-color: #FFFFFF;
+    border: solid 1px #F1F1F1;
+}
+
+.content ul {
+    width: 610px;
+    display: flex;
+    /* justify-content: space-around; */
+    background-color: #FFFFFF;
+    overflow-x: auto;
+}
+
+.content ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.content li {
+    text-align: center;
+}
+
+.flex-center-bt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friend-list {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.friend-list ul {
+    list-style-type: none;
+}
+
+.friends li {
+    /* background-color: #FFFFFF; */
+    margin: 0 2rem;
+}
+
+.friends li img {
+    background-color: #FFFFFF;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+}
+
+/* .friends li img:first-child {
+    margin-left: 0;
+}
+
+.friends li img:last-child {
+    margin-right: 0;
+} */
+
+.friends p {
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.alinhado {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.alinhado img {
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.alinhado p {
+    margin-left: 21px;
+    width: 200px;
+}
+
+.username_feed {
+    font-weight: 600;
+    font-size: 16px;
+    color: #b6b6b6;
+}
+
+.username_feed a {
+    text-decoration: none;
+    color: #b6b6b6;
+}
+
+.username_feed a:hover {
+    cursor: pointer;
+}
+
+.username_feed a:first-child {
+    color: black;
+}
+
+.friend-list ul li h1 {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 610px;
+    height: 166px;
+    background-color: #FFFFFF;
+    border: solid 1px #F1F1F1;
+    margin-bottom: 38px;
+}
+
+.postar-content {
+    margin: 0 25px;
+    background: #FFFFFF;
+}
+
+.postar-content img {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-text {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding-top: 21px;
+}
+
+.post ul {
+    list-style-type: none;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.sombrinha {
+    background: #FFFFFF;
+}
+
+.post ul h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    background: #FFFFFF;
+}
+
+.post ul img {
+    background: #FFFFFF;
+}
+
+.busca {
+    margin-top: 30px;
+}
+
+.digite input {
+    width: 231px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.escolher {
+    width: 157px;
+    height: 27px;
+}
+
+.escolher label {
+    width: 157px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #7D7D7D;
+    font-weight: 600;
+    background-color: #D1D1D1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.do-lado {
+    margin-left: 175px;
+}
+
+.do-lado h2 {
+    font-size: 12px;
+}
+
+.escolher input[type='file'] {
+    display: none;
+}
+
+.Adicionar-conteudo button {
+    width: 140px;
+    height: 27px;
+    background-color: #2686CC;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.post-feed {
+    width: 610px;
+    height: 610px;
+    background-color: #FFFFFF;
+    border: solid 1px #F1F1F1;
+    margin-bottom: 55px;
+}
+
+.imagem {
+    margin-top: 13px;
+    margin-left: 16px;
+    font-size: 12px;
+}
+
+.imagem img {
+    background-color: #FFFFFF;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+}
+
+.imagem ul {
+    background-color: #FFFFFF;
+}
+
+.texto {
+    background-color: #FFFFFF;
+}
+
+.post-feed p:first-child {
+    font-weight: 600;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.post-feed p {
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.foto {
+    margin-top: 16px;
+    max-width: 610px;
+    margin-bottom: 14.08px;
+    background-color: #FFFFFF;
+}
+
+.foto img {
+    width: 61rem;
+    height: 34.3rem;
+}
+
+#legenda{
+    margin: 0 0 1.5rem 0;
+}
+
+.coracao {
+    width: 2.35rem;
+    height: 2rem;
+    margin-left: 2.2rem;
+    cursor: pointer;
+}
+
+.balao {
+    margin-left: 19.33px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.comentar {
+    background-color: #FFFFFF;
+}
+
+.comentar input {
+    width: 22rem;
+    height: 2.5rem;
+    border: none;
+    border-bottom-style: solid;
+    margin-left: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px solid #DCDCDC;
+    background-color: #FFFFFF;
+    outline: none;
+}
+.comentar button{
+    width: 3rem;
+    height: 100%;
+    background-color: #0094f600;
+    border: none;
+    outline: none;
+}
+.comentar input:focus{
+    outline: none;
+}
+
+.text {
+    width: 140px;
+    background-color: #FFFFFF;
+}
+
+.curtidas {
+    width: 100px;
+    margin-left: 22px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.coments {
+    background-color: #FFFFFF;
+}
+
+.coments ul {
+    background-color: #FFFFFF;
+}
+
+.coments li {
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+.coments li h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.cerquilha {
+    font-size: 13px;
+    font-weight: 400;
+    color: #2686CC;
+    background-color: #FFFFFF;
+}
+
+.coments h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+    margin-left: 28px;
+    background-color: #FFFFFF;
+}
+
+.coments h6 {
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+    margin-left: 25px;
+    background-color: #FFFFFF;
+}
+
+.coments h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 22px;
+    color: black;
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+.space {
+    width: 100%;
+    height: 55px;
+    display: flex;
+}
+
+.heart {
+    margin-top: 0;
+}
+
+.comment-feed {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    word-break: normal;
+    margin-left: 2.2rem;
+    margin-bottom: 0;
+}
+
+.trash {
+    margin-right: 2.2rem;
+    margin-left: 0;
+    font-size: 1.3rem;
+}
+
+.box-comments {
+    height: 8rem;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.box-comments::-webkit-scrollbar {
+    width: 0;
+}
+
+.box-comments li {
+    overflow-wrap: break-word;
+}
+
+.box-comments li img {
+    width: 1.5rem;
+    height: 1.312rem;
+    align-self: flex-start;
+    justify-self: flex-end;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+
+/* ----------------fim do feed---------------------*/
+
+
+/*Informações do Usuário - Início*/
+
+#info {
+    width: 100%;
+    height: 18.8rem;
+    margin-top: 3.7rem;
+}
+
+.info-container {
+    max-width: 93.5rem;
+    height: 100%;
+    margin: auto;
+}
+
+.info-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info-content img {
+    width: 15.2rem;
+    height: 15.2rem;
+    border-radius: 50%;
+    margin: 0 10rem 0 6.5rem;
+}
+
+.info-text {
+    width: 39.5rem;
+    font-size: 1.6rem;
+}
+
+.username h1 {
+    font-size: 2.6rem;
+    font-weight: normal;
+}
+
+.info-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-numbers p {
+    margin: 2.0rem 0rem;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+}
+
+.options a:first-child {
+    margin-right: 3rem;
+}
+
+.options a {
+    text-decoration: none;
+    color: #2686CC;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*Informações do Usuário - Término*/
+
+
+/*Postagens - Início*/
+
+.menu-posts {
+    width: 100%;
+    height: 6rem;
+    margin-top: 1.45rem;
+    margin-bottom: 3.1rem;
+}
+
+.menu-profile {
+    max-width: 93.5rem;
+    height: 100%;
+    margin: auto;
+    border-top: 0.01rem solid #DCDCDC;
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+    display: flex;
+    align-items: center;
+    margin-left: 21.5rem;
+}
+
+.menu-text img {
+    max-width: 1.6rem;
+    max-height: 1.4rem;
+}
+
+.menu-text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 0.8rem;
+}
+
+
+/*Publicações - Início*/
+
+#posts {
+    width: 100%;
+    height: 100%;
+}
+
+.posts-container {
+    width: 93.5rem;
+    height: 100%;
+    margin: auto;
+}
+
+.posts-content {
+    max-width: 100%;
+    list-style: none;
+}
+
+.post-profile {
+    max-width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+.post-profile>img {
+    width: 43rem;
+    height: 40.4rem;
+}
+
+.post-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-info > a {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #ed4956;
+}
+
+.comment a {
+    align-self: flex-start;
+    justify-self: flex-end;
+    cursor: pointer;
+    margin-left: 1rem;
+    color: black;
+}
+
+.interaction {
+    width: 45rem;
+    height: 35rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.interaction>p {
+    margin-bottom: 3rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    margin: 0 2rem 0 0;
+}
+
+.username-and-location h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.like-and-comment img {
+    width: 2.35rem;
+    height: 2rem;
+    margin: 1rem 0 0.5rem 0;
+    cursor: pointer;
+}
+
+.like-and-comment img:first-child {
+    margin-right: 1rem;
+}
+
+.like-and-comment a {
+    text-decoration: none;
+}
+
+.comments {
+    height: 16rem;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.comments::-webkit-scrollbar {
+    width: 0;
+}
+
+.comments li {
+    overflow-wrap: break-word;
+}
+
+.comments li img {
+    width: 1.5rem;
+    height: 1.312rem;
+    align-self: flex-start;
+    justify-self: flex-end;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments-text {
+    width: 100%;
+    display: flex;
+    word-break: normal;
+    margin-bottom: 1rem;
+}
+
+.comments-text h3 {
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.subtitle {
+    margin-top: 1rem;
+}
+
+#view-all-comments {
+    margin: 3rem 0 0 0;
+}
+
+#view-all-comments:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*------------------amigo-------------------*/
+
+.btn1 {
+    border-radius: 2px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 98px;
+    height: 33px;
+    background: #0095f6;
+    cursor: pointer;
+    color: white;
+    margin-left: 30px;
+}
+
+.username {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnfct {
+    border-radius: 2px;
+    border-color: #DCDCDC;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    white-space: nowrap;
+    width: 98px;
+    height: 33px;
+    background: #FAFAFA;
+    cursor: pointer;
+    color: black;
+    margin-left: 30px;
+}
+
+
+/*------------------Fim amigo-------------------*/
+
+.invisivel {
+    display: none;
+}
+
+.friends li {
+    position: relative;
+}
+
+.friends button {
+    position: absolute;
+    width: 6.2rem;
+    height: 6.2rem;
+    top: 0px;
+    left: -20px;
+    background-color: #da222200;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 2rem;
+    border-radius: 50%;
+}
+
+.friends input {
+    display: none;
+}
+
+.erro {
+    font-size: 1.2rem;
+    color: red;
+}

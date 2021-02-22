@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = @ViewBag.UsuarioClicado.Nome;
+}
+
+<section id="info">
+    <div class="info-container">
+        <div class="info-content">
+            <img src="~/img/perfil/@ViewBag.UsuarioClicado.Foto" alt="foto de perfil">
+            <div class="info-text">
+                <div class="username">
+                    <h1>@ViewBag.UsuarioClicado.Username</h1>
+                    <button class="btn1">Seguir</button>
+                </div>
+                <div class="info-numbers">
+                    <p>@ViewBag.NumPosts publicações</p>
+                    <p>0 seguindo</p>
+                    <p>0 seguidores</p>
+                </div>
+                <div class="description">
+                    <p><strong>@ViewBag.UsuarioClicado.Nome</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="menu-posts">
+    <div class="menu-profile">
+        <div class="menu-text">
+            <img src="./img/img-perfil/squares.svg" alt="">
+            <p>Publicações</p>
+        </div>
+    </div>
+</div>
+<article id="posts">
+    <div class="posts-container">
+        <div class="posts-content">
+            @foreach (Publicacao p in ViewBag.PostAmigo)
+            {
+                <div class="post-profile">
+                    <img src="~/img/publicacoes/@p.Imagem" alt="">
+                    <div class="post-info">
+                        <div class="interaction">
+                            <div class="user-info">
+                                @* Imagem do usuario dono do perfil *@
+                                <img src="~/img/perfil/@ViewBag.UsuarioClicado.Foto" alt="">
+                                <div class="username-and-location">
+                                    <h2>@ViewBag.UsuarioClicado.Username</h2>
+                                    <p>São Paulo, SP</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="comments-text subtitle">
+                                    <h3>@p.Username</h3>
+                                    <p>@p.Legenda</p>
+                                </div>
+                            </div>
+                            <div class="like-and-comment">
+                                    <img id="@p.IdPublicacao" src="~/img/img-perfil/like.svg" alt="" onclick="curtir(@p.IdPublicacao)">
+                                    <input type="hidden" value="@ViewBag.UsuarioClicado.IdUsuario" name="IdAmigo"></input>
+                                    <input type="hidden" value="@ViewBag.UsuarioClicado.Nome" name="NomeAmigo"></input>
+                                    <input type="hidden" value="@ViewBag.UsuarioClicado.Foto" name="FotoAmigo"></input>
+                                    <input type="hidden" value="@ViewBag.UsuarioClicado.Username" name="UsernameAmigo"></input>
+                                <img src="./img/img-perfil/comment.svg" alt="">
+                            </div>
+                            <p>@p.Likes curtidas</p>
+                            <ul class="comments">
+                                @foreach (Comentario c in ViewBag.Comentarios)
+                                {
+                                    @if(p.IdPublicacao == c.IdPublicacao)
+                                    {
+                                        <li>
+                                            <div class="comment">
+                                                <div class="comments-text">
+                                                    <h3>@c.Username</h3>
+                                                    <p>@c.Mensagem</p>
+                                                </div>
+                                                <img id="@c.IdComentario" src="./img/img-perfil/like.svg" alt="" onclick="curtir(@c.IdComentario)">
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </li>
+                                    }
+                                }                                
+                            </ul>
+                            @* <p id="view-all-comments">Ver todos os 585 comentários</p> *@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</article>

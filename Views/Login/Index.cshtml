@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="caixa">
+    <div class="page">
+        <div class="login">
+            <div class="img-login">
+                <img src="img/img-login/Instadev.svg" alt="Avatar" class="avatar">
+                <p></p>
+            </div>
+            <div class="container-cadastro">
+                <form class="input-content" method="POST" action='@Url.Action("Logar")' enctype="multipart/form-data">
+
+                    <input type="text" placeholder="E-mail ou Username" name="Email" required>
+
+                    <input type="password" placeholder="Senha" name="Senha" required>
+                    
+                    <i class="erro">@TempData.Peek("Mensagem")</i>
+
+                    <button class="botao-login" type="submit">Entrar</button>
+
+                    <div class="linha-container">
+                        <span class="linha"></span>
+                        <p> OU </p>
+                        <span class="linha"></span>
+                    </div>
+
+                </form>
+
+                <div class="esquecer">
+                    <a href="index.html">Esqueceu a senha?</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="conect">
+            <p>Não tem uma conta? <a asp-area="" asp-controller="Cadastro" asp-action="Index" title="Cadastre-se">Cadastre-se</a></p>
+        </div>
+
+        <div class="app">
+            <p>Obtenha o aplicativo. </p>
+
+            <div class="play">
+                <img src="img/img-login/app_store 1.svg" alt="Avatar" class="avatar">
+                <img src="img/img-login/google_play 1.svg" alt="Avatar" class="avatar">
+            </div>
+        </div>
+    </div>
+</section>

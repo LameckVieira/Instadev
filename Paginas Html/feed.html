@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="../wwwroot/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-feed">
+            <section class="friend-list flex-center-bt">
+                <div class="content flex-center-bt">
+                    <ul class="flex-center-bt">
+                        <div class="friends">
+                            <li> <img src="./img/img-feed/vin-diesel 1.png" alt="Foto do perfil do amigo Vin Diesel">
+                                <p>vin_diesel </p>
+                            </li>
+                        </div>
+
+                        <div class="friends">
+                            <li><img src="./img/img-feed/gabigordo 1.png" alt="Foto do perfil do amigo Gabi gordo">
+                                <p>gabigordo</p>
+                            </li>
+                        </div>
+                        <div class="friends">
+                            <li><img src="./img/img-feed/will-baiano 1.png" alt="Foto do perfil do amigo Will baiano">
+                                <p>will_baiano</p>
+                            </li>
+                        </div>
+                        <div class="friends">
+                            <li><img src="./img/img-feed/tony_stark 1.png" alt="Foto do perfil do amigo Adriano Stark">
+                                <p>adriano_stark</p>
+                            </li>
+                        </div>
+                        <div class="friends">
+                            <li><img src="./img/img-feed/pele 1.png" alt="Foto do perfil do amigo King Pelé ">
+                                <p>king_pele</p>
+                            </li>
+                        </div>
+                        <div class="friends">
+                            <li><img src="./img/img-feed/samuel-rosa-bebê 1.png" alt="Foto do perfil do amigo Samuel Rosa ">
+                                <p>samuel_rosa</p>
+                            </li>
+                        </div>
+                        <div class="friends">
+                            <li><img src="./img/img-feed/chaves_metal 1.png" alt="Foto do perfil do amigo Chavel Metal ">
+                                <p>chaves_metal</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="alinhado">
+                    <ul class="flex-center-bt">
+                        <li><img src="./img/img-feed/thank-you 2.png" alt="Sua foto de perfil"></li>
+                        <div class="username_feed">
+                            <p> yes_baby</p>
+                            <p>Marcos Jeeves</p>
+                        </div>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="post">
+                <div class="container">
+                    <div class="postar-content">
+
+                        <ul class="flex-center">
+                            <div class="img-text">
+                                <li class="sombrinha"><img src="./img/img-feed/thank-you 3.svg" alt="Imagem de perfil"></li>
+                                <li>
+                                    <h3>Postar</h3>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="Adicionar-conteudo">
+                            <form action="index.html" method="POST" enctype="multipart/form-data">
+                                <div class="busca">
+                                    <ul class="flex-center-bt">
+                                        <div class="digite">
+                                            <li><input type="text" id="txtBusca" placeholder="Digite a descrição da imagem..." /></li>
+                                        </div>
+                                        <div class="escolher">
+                                            <label for='selecao-arquivo'>Escolha a imagem</label>
+                                            <input type="file" id="selecao-arquivo" />
+                                        </div>
+                                        <div class="postar">
+                                            <li><button type="submit">Postar</button></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- a partir dessa parte será copiado !-->
+            <section class="Postagem1">
+                <div class="post_gabigordo">
+                    <div class="imagem">
+                        <ul class="flex-center">
+                            <img src="./img/img-feed/gabigordo 2.png" alt="Foto do perfil do amigo Gabi Gordo">
+                            <div class="texto">
+                                <p>gabigordo</p>
+                                <p>Flamengo, RJ</p>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="foto">
+                        <img src="./img/img-feed/post-gabigordo 1.png" alt="Foto dos jogadores do Flamengo com o amigo gabigordo">
+                    </div>
+                    <div class="cont">
+                        <form>
+                            <div class="coments">
+                                <ul class="flex-center">
+                                    <div class="coracao">
+                                        <label><img src="./img/img-feed/Vectors2.svg" alt="Coração de like"  id="1" onclick="mudarImagem(1);"></label>
+                                    </div>
+                                    <div class="balao">
+                                        <img src="./img/img-feed/Vectorbalao.svg" alt="">
+                                    </div>
+                                    <div class="comentar">
+                                        <input type="text" id="txtBusca" placeholder="Comentar..." required: required />
+                                    </div>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text">
+                        <h5 class="curtidas">2077 curtidas</h5>
+                    </div>
+                    <div class="coments">
+                        <ul class="flex-center">
+                            <h4>gabigordo</h4>
+                            <p>
+                                <span class="cerquilha">#flamengo</span> Amo vocês mil milhões S2</p>
+                        </ul>
+                    </div>
+                    <div class="coments">
+                        <ul class="flex-center">
+                            <h4>yes_baby</h4>
+                            <p>thank you </p>
+                        </ul>
+                    </div>
+                    <div class="coments">
+                        <ul class="flex-center">
+                            <h4>king_pele</h4>
+                            <p>Esses são bons de bola, entende?</p>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim da parte a ser copiada !-->
+            <!-- Inicio cópia 1!-->
+            <section class="Postagem1">
+                <div class="post_gabigordo">
+                    <div class="imagem">
+                        <ul class="flex-center">
+                            <img src="./img/img-feed/gabigordo 2.png" alt="Foto do perfil do amigo Gabi Gordo">
+                            <div class="texto">
+                                <p>gabigordo</p>
+                                <p>Flamengo, RJ</p>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="foto">
+                        <img src="./img/img-feed/post-gabigordo 1.png" alt="Foto dos jogadores do Flamengo com o amigo gabigordo">
+                    </div>
+                    <div class="cont">
+                        <form>
+                            <div class="coments">
+                                <ul class="flex-center">
+                                    <div class="coracao">
+                                        <label><img src="./img/img-feed/Vectors2.svg" alt="Coração de like"  id="2" onclick="mudarImagem(2);"></label>
+                                    </div>
+                                    <div class="balao">
+                                        <img src="./img/img-feed/Vectorbalao.svg" alt="">
+                                    </div>
+                                    <div class="comentar">
+                                        <input type="text" id="txtBusca" placeholder="Comentar..." required: required />
+                                    </div>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text">
+                        <h5 class="curtidas">2077 curtidas</h5>
+                    </div>
+                    <div class="coments">
+                        <ul class="flex-center">
+                            <h4>gabigordo</h4>
+                            <p>
+                                <span class="cerquilha">#flamengo</span> Amo vocês mil milhões S2</p>
+                        </ul>
+                    </div>
+                    <div class="coments">
+                        <ul class="flex-center">
+                            <h4>yes_baby</h4>
+                            <p>thank you </p>
+                        </ul>
+                    </div>
+                    <div class="coments">
+                        <ul class="flex-center">
+                            <h4>king_pele</h4>
+                            <p>Esses são bons de bola, entende?</p>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Fim cópia 1!-->
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.principal {
+    width: 100%;
+    height: 61.0rem;
+    padding-top: 2.4rem;
+}
+
+.edicao {
+    width: 93.5rem;
+    height: 61.0rem;
+    margin: auto;
+    display: flex;
+    border: solid 0.1rem #F1F1F1;
+}
+
+.titulo {
+    width: 23.3rem;
+    height: 61.0rem;
+    border-right: solid 0.1rem #F1F1F1;
+}
+
+.titulo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.editar {
+    width: 23.3rem;
+    height: 5.392rem;
+    padding-left: 2.9rem;
+    padding-top: 1.9rem;
+    font-size: 1.5rem;
+    border-left: solid 0.3rem;
+}
+
+.img {
+    display: flex;
+    width: 20.0rem;
+    height: 61rem;
+    padding-left: 12.9rem;
+    list-style-type: none;
+    justify-content: right;
+}
+
+.imagem {
+    width: 5rem;
+    height: 5rem;
+}
+
+.texto {
+    width: 20rem;
+    height: 36.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.texto h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.informacao {
+    width: 58.0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.informacao input {
+    border: 0.1rem solid #ccc;
+}
+
+.informacao input:focus {
+    outline-color: rgb(134, 134, 134);
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 15.3rem;
+}
+
+.info-usuario img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2.0rem;
+}
+
+.info {
+    width: 52.3rem;
+    height: 9.8rem;
+    padding-top: 2.5rem;
+}
+
+.info h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.info a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2686CC;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.nome form {
+    display: flex;
+}
+
+.nome label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.nome input {
+    width: 35.4rem;
+    height: 3rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+    color: #DCDCDC;
+}
+
+.text-input {
+    width: 35.4rem;
+    word-break: normal;
+    margin-bottom: 2.0rem;
+}
+
+.text-input p {
+    margin: 1.0rem 0;
+    color: #909090;
+    border-style: solid 0.01rem;
+    font-size: 1.2rem;
+}
+
+.usuario form {
+    display: flex;
+}
+
+.usuario label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.usuario input {
+    width: 35.4rem;
+    height: 3.0rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+    color: #DCDCDC;
+}
+
+.usuario p {
+    width: 35.4rem;
+    color: #909090;
+    border-style: solid 0.1rem;
+    font-size: 1.2rem;
+}
+
+#txt-username {
+    margin-bottom: 2.5rem;
+}
+
+.email {
+    display: flex;
+}
+
+.email label {
+    margin-top: 0.5rem;
+    margin-right: 2.0rem;
+}
+
+.email input {
+    width: 35.4rem;
+    height: 3.0rem;
+    border-style: solid 0.1rem;
+    border-radius: 0.2rem;
+    color: #DCDCDC;
+}
+
+.enviar {
+    width: 35.4rem;
+    height: 12.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2686CC;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.desativar {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2686CC;
+}
+
+.desativar:hover {
+    text-decoration: underline;
+}
